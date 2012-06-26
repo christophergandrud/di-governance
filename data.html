@@ -1,0 +1,77 @@
+--- 
+layout: page 
+title: Data/Code 
+group: navigation 
+--- 
+
+{% include JB/setup %}
+
+<style>
+.centered {
+    text-align:center
+}
+</style>
+
+<hr>
+    
+    <h1 class="centered"> Data </h1>
+
+<hr>
+
+<div class="row-fluid">
+    <div class="span8">
+        <h3> The constricted data set used in the paper's analyses can be found at: </h3>
+        <br />
+    </div>
+    
+    <div class="span12, centered">
+        <a href="https://github.com/christophergandrud/di-governance.github.com/blob/master/data_files/DI_analysis_data.csv">https://github.com/christophergandrud/di-governance.github.com/blob/master/data_files/DI_analysis_data.csv</a>
+    </div>
+</div>
+
+        <br />
+        <br />
+        <br />
+        
+    <div class="span11">
+        <h3>To load this data directly into <b>R</b> use the following commands (for more details see <a href="http://christophergandrud.github.com/2012/06/11/making-data-available-with-github/">here</a>):</h3>
+        <pre>
+            <code>
+            library(RCurl)
+            library(foreign)
+
+            url <- "https://raw.github.com/christophergandrud/di-governance.github.com/master/data_files/DI_analysis_data.csv"
+
+            disproportionality.data <- getURL(url)                
+
+            disproportionality.data <- read.csv(textConnection(disproportionality.data))
+            
+            </code>
+        </pre>
+    </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />  
+<hr>
+
+    <h1 class="centered"> Code </h1>
+
+<hr>
+
+<div class="row-fluid">
+    <div class="span8">
+        <h3> Full replicability code for can be found at: </h3>
+        <br />
+    </div>
+        <div class="span12, centered">
+            <a href="https://github.com/christophergandrud/di-governance.github.com/blob/master/commands/public_DI_replicible_tables.do">https://github.com/christophergandrud/di-governance.github.com/blob/master/commands/public_DI_replicible_tables.do</a>
+        </div>
+        
+        <div class="span8">
+        <br />
+            <blockquote>Note: running the code requires both <b>Stata 12</b> and <b>R 2.14</b></blockquote>
+    </div>
+</div>

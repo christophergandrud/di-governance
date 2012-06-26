@@ -4,6 +4,7 @@ html, body {
 }
 .navbar {
   margin-bottom: 0;
+  color: #DF4F14;
 }
 .container > footer {
   margin-top: 20px;
@@ -34,6 +35,7 @@ html, body {
 
 .topbar .btn {
   border: 0;
+  background-color: #E9631E;
 }
 
 
