@@ -6,22 +6,24 @@ group: navigation
 
 {% include JB/setup %}
 
-<div class="row-fluid">
-        <div class="alert alert-success"> The following tables summarise the paper's sample. </div>
+<div class="alert alert-success"> 
+    <h4 align="center">The following tables summarise the paper's sample.</h4> 
+</div>
         <br />
         <br />
 
 <!-- Tabbed Tables --->
 
-
 <ul class="nav nav-tabs" id="tableTabs">
-    <li class="active"><a href="http://christophergandrud.github.com/di-governance/tables.html#sample" data-toggle="tab">Country Sample</a></li>
-    <li><a href="http://christophergandrud.github.com/di-governance/tables.html#corr" data-toggle="tab">Correlations</a></li>
+    <li class="active"><a href="#sample" data-toggle="tab">Country Sample</a></li>
+    <li class=""><a href="#descript" data-toggle="tab">Variable Summaries</a></li>
+    <li class=""><a href="#corr" data-toggle="tab">Correlations</a></li>
+    <li class=""><a href="#coxph" data-toggle="tab">Cox PH Single Transition Models</a></li>
 </ul>
 
 
-<div id= "tableTabs-content" class="tab-content">
-  <div class="tab-pane fade" id="sample">
+<div class="tab-content">
+  <div class="tab-pane fade active in" id="sample">
         <h2>Country Sample and Deposit Insurance Governance Types</h2>  
         <div class="alert">
             <strong>Note:</strong> Countries were included in the competing risks analyses if Reinhart & Rogoff (2010) have banking crisis data for them. <br />
@@ -1613,16 +1615,202 @@ group: navigation
 </table>
 </div>
 
-    <div class="tab-pane fade" id="corr">
-        Test Stuff
+    <div class="tab-pane fade" id="descript">
+        <h2>Summary Statistics for the Right-hand Variables</h2>
+        <br />
+        <table class="table table-striped">
+            <thead>
+                <th align="left"><strong>Variable</strong></th>
+                <th align="center"><strong>Mean</strong></th>
+                <th align="center"><strong>Std. Dev.</strong></th>
+                <th align="center"><strong>Min.</strong></th>
+                <th align="center"><strong>Max.</strong></th>
+                <th align="center"><strong>N</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Democracy (UDS)</td>
+<td align="center">0.634</td>
+<td align="center">0.912</td>
+<td align="center">-1.433</td>
+<td align="center">2.036</td>
+<td align="center">1680</td>
+</tr>
+<tr class="even">
+<td align="left">New Democracy</td>
+<td align="center">0.085</td>
+<td align="center">0.278</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1680</td>
+</tr>
+<tr class="odd">
+<td align="left">Crisis Dummy</td>
+<td align="center">0.202</td>
+<td align="center">0.401</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1680</td>
+</tr>
+<tr class="even">
+<td align="left">DB Assets/GDP</td>
+<td align="center">60.787</td>
+<td align="center">44.696</td>
+<td align="center">1.298</td>
+<td align="center">270.442</td>
+<td align="center">1510</td>
+</tr>
+<tr class="odd">
+<td align="left">Concentration</td>
+<td align="center">0.649</td>
+<td align="center">0.207</td>
+<td align="center">0.148</td>
+<td align="center">1</td>
+<td align="center">1148</td>
+</tr>
+<tr class="even">
+<td align="left">Regional Peer SE (Ind.)</td>
+<td align="center">25.548</td>
+<td align="center">22.341</td>
+<td align="center">0</td>
+<td align="center">100</td>
+<td align="center">1680</td>
+</tr>
+<tr class="odd">
+<td align="left">Regional Peer SE (MoF)</td>
+<td align="center">6.335</td>
+<td align="center">6.350</td>
+<td align="center">0</td>
+<td align="center">24.138</td>
+<td align="center">1680</td>
+</tr>
+<tr class="even">
+<td align="left">KAOPEN</td>
+<td align="center">0.454</td>
+<td align="center">1.636</td>
+<td align="center">-1.831</td>
+<td align="center">2.5</td>
+<td align="center">1619</td>
+</tr>
+<tr class="odd">
+<td align="left">IMF Stand-by</td>
+<td align="center">0.161</td>
+<td align="center">0.368</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1680</td>
+</tr>
+<tr class="even">
+<td align="left">Bur. Quality</td>
+<td align="center">2.53</td>
+<td align="center">1.204</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">1600</td>
+</tr>
+<tr class="odd">
+<td align="left">Socio. Risk</td>
+<td align="center">6.173</td>
+<td align="center">2.145</td>
+<td align="center">0.5</td>
+<td align="center">11</td>
+<td align="center">1600</td>
+</tr>
+<tr class="even">
+<td align="left">EU (from 1994)</td>
+<td align="center">0.099</td>
+<td align="center">0.299</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1680</td>
+</tr>
+<tr class="odd">
+<td align="left">GDP/Capita</td>
+<td align="center">9.506</td>
+<td align="center">12.203</td>
+<td align="center">0.19</td>
+<td align="center">76.2</td>
+<td align="center">1609</td>
+</tr>
+<tr class="even">
+<td align="left">CBG Tenure</td>
+<td align="center">3.457</td>
+<td align="center">3.773</td>
+<td align="center">-1</td>
+<td align="center">29</td>
+<td align="center">1551</td>
+</tr>
+<tr class="odd">
+<td align="left">Prop. Deposits at Gov. Owned</td>
+<td align="center">0.184</td>
+<td align="center">0.233</td>
+<td align="center">0</td>
+<td align="center">0.91</td>
+<td align="center">1368</td>
+</tr>
+<tr class="even">
+<td align="left">Prop. Assets at Gov. Owned</td>
+<td align="center">0.2</td>
+<td align="center">0.227</td>
+<td align="center">0</td>
+<td align="center">0.9</td>
+<td align="center">1235</td>
+</tr>
+<tr class="odd">
+<td align="left">Liquid Assets/Reserves</td>
+<td align="center">0.148</td>
+<td align="center">0.176</td>
+<td align="center">0</td>
+<td align="center">1.043</td>
+<td align="center">369</td>
+</tr>
+<tr class="even">
+<td align="left">Capital/Assets</td>
+<td align="center">8.25</td>
+<td align="center">2.873</td>
+<td align="center">2.7</td>
+<td align="center">16.3</td>
+<td align="center">444</td>
+</tr>
+<tr class="odd">
+<td align="left">LIEC</td>
+<td align="center">6.423</td>
+<td align="center">1.431</td>
+<td align="center">1</td>
+<td align="center">7</td>
+<td align="center">1672</td>
+</tr>
+<tr class="even">
+<td align="left">EIEC</td>
+<td align="center">6.225</td>
+<td align="center">1.643</td>
+<td align="center">2</td>
+<td align="center">7</td>
+<td align="center">1672</td>
+</tr>
+</tbody>
+</table>
     </div>
 
-    </div> 
+    <div class="tab-pane fade" id="corr">
+        <b>Fill In</b>
+    </div>
+    
+    <div class="tab-pane fade" id="coxph">
+        <b>Fill In</b>
+    </div>
+
 </div>
 
-<script type="text/javascritp" src="http://code.jquery.com/jquery-1.7.2.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
 <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
+
+
+<script>
+  $(function () {
+    $('#tableTabs a:first').tab('show');
+  })
+</script>
 
 
