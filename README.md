@@ -3,7 +3,7 @@
 ## Christopher Gandrud
 
 > <a href = "mailto:gandrud@yonsei.ac.kr">gandrud@yonsei.ac.kr</a>  
-> [http://christophergandrud.github.com/](http://christophergandrud.github.com/)
+> [http://christophergandrud.blogspot.com/](http://christophergandrud.blogspot.com/)
 
 This is a website hosting data and other extra material used in ''Competing Risks and Deposit Insurance Governance Convergence''.
 
